@@ -14,7 +14,6 @@ class Paudio() :
     def receiveData(self):
         try:
             self.pcmData = np.fromstring(self.stream.read(self.CHUNK), dtype=np.int16)
-            return self.pcmData
         except Exception as E:
             print(E, "\n")
             self.KeepRecording = False
@@ -48,7 +47,6 @@ if __name__=="__main__":
     record = Paudio()
     record.record_start()
     while True:
-        pcm = record.receiveData()
-        print pcm
+        print record.pcmData
         
     record.close()
