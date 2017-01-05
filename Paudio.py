@@ -29,7 +29,7 @@ class Paudio() :
         self.p.terminate()
 
     def thread_start(self) :
-        self.th = threading.Thread(target = self.transferData)
+        self.th = threading.Thread(target = self.receiveData)
         self.th.start()
 
     def record_start(self):
