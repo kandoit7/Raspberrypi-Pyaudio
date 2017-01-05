@@ -13,7 +13,7 @@ class Paudio() :
 
     def receiveData(self):
         try:
-            self.pcmData = np.fromstring(self.stream.read(self.chunk), dtype=np.int16)
+            self.pcmData = np.fromstring(self.stream.read(self.CHUNK), dtype=np.int16)
             return self.pcmData
         except Exception as E:
             print(E, "\n")
