@@ -1,2 +1,5 @@
 # Raspberrypi-Pyaudio
-Practice
+
+PyAudio - Raspberry PI - ( USB Audio Card {Input} || USB Mic )
+
+Recording Audio.
