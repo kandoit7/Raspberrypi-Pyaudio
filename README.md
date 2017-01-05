@@ -15,5 +15,5 @@ Writing the module code <br />
 5. thread <br />
 
 
-Paudio.py  ----> pyaudio
-SPaudio.py ----> socket + pyaudio
+- Paudio.py  ----> pyaudio
+- SPaudio.py ----> socket + pyaudio
