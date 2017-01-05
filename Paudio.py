@@ -34,7 +34,7 @@ class Paudio() :
 
     def record_start(self):
         self.KeepRecording = True
-        self.data = None
+        self.pcmData = None
         self.stream = self.p.open(format=self.FORMAT, 
                                   channels=self.CHANNELS, 
                                   rate=self.RATE, 
