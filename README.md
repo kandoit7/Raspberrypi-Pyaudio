@@ -13,3 +13,7 @@ Writing the module code <br />
 4. chunk = 1024 (chunk is a buffer....? ) <br />
    exam..) pcmData <- [chunk = 1024] ====> pcmData[1024] = { x0, x1, x2, x3, ..... x1023 } <br />
 5. thread <br />
+
+
+Paudio.py  ----> pyaudio
+SPaudio.py ----> socket + pyaudio
