@@ -16,6 +16,7 @@ class SPaudio():
     def receiveData(self):
         try:
             self.pcmData = np.fromstring(self.stream.read(self.CHUNK), dtype=np.int16)
+            self.sock.send(self.pcmData)
         except Exception as E:
             print(E, "\n")
             self.KeepRecording = False
@@ -42,6 +43,7 @@ class SPaudio():
                                   input=True,
                                   frames_per_buffer=self.CHUNK
                                   )
+        self.sock.connect(self.addr)
         self.thread_start()
 
 
