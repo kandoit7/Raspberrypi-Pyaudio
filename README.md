@@ -14,3 +14,4 @@ chunk = 1024 (chunk is a buffer....? )
   exam..) pcmData <- [chunk = 1024] ====> pcmData[1024] = { x0, x1, x2, x3, ..... x1023 }
   
 thread
+d
